@@ -1,8 +1,7 @@
 #include<stdio.h>
 /**
  * main - entry
- *
- * Return: always zero (Anything)
+ * Return: always zero
  */
 int main(void)
 {
