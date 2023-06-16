@@ -3,7 +3,7 @@
 /*
  * main - Entry point
  *
- * Description: print a quote using write function
+ * Description: print a quote using main and write function
  *
  * Return: Always 1 (Success)
  */
