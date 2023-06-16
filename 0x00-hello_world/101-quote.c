@@ -5,7 +5,7 @@
  *
  * Description: just a program
  *
- * Return: Always one (Success)
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
