@@ -1,9 +1,7 @@
 #include<stdio.h>
 #include<unistd.h>
 /*
- * main - Entry point
- *
- * Description: just a program
+ * main - a c program
  *
  * Return: Always 1 (Success)
  */
