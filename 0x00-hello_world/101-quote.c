@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<unistd.h>
 /*
- * main - a c program
+ * main - Entry point
+ *
+ * Description: print a quote using write function
  *
  * Return: Always 1 (Success)
  */
