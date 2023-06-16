@@ -6,7 +6,12 @@
  */
 int main(void)
 {
-	char alphabet = 'abcdefghijklmnopqrstuvwxyz';
+	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
+	int alph;
+	for (alph = 0; alph < 26; alph++)
+	{
+		putchar(alphabet[alph]);
+	}
 	putchar(alphabet);
 	return (0);
 }
