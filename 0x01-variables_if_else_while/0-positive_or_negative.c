@@ -3,6 +3,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - sees if a number is positive, negative or zero.
+ *
+ * Return: always zero
+ */
 int main(void)
 {
 	int n;
@@ -10,17 +15,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n<0)
-	{
-		printf(n,"is negative\n");
-	}
-	if (n=0)
-	{
-		printf(n,"is zero\n");
-	}
 	if (n>0)
 	{
-		printf(n,"is positive\n);
+		printf(n,"%d is positive\n");
+	}
+	if (n==0)
+	{
+		printf(n,"%d is zero\n");
+	}
+	if (n<0)
+	{
+		printf(n,"%d is positive\n);
 	}
 	return (0);
 }
