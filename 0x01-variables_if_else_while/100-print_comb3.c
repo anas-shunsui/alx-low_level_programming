@@ -12,7 +12,7 @@ int main(void)
 	{
 		for (comb2 = 49; comb2 <= 57; comb2++)
 		{
-			if (comb2 < comb1)
+			if (comb2 > comb1)
 			{
 				putchar(comb1);
 				putchar(comb2);
