@@ -19,7 +19,7 @@ int main(void)
 					putchar(comb1);
 					putchar(comb2);
 					putchar(comb3);
-					if (comb1 != 56 || comb2 != 57)
+					if (comb1 != 55 || comb2 != 56)
 					{
 						putchar(',');
 						putchar(' ');
