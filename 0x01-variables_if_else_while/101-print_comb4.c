@@ -8,9 +8,9 @@ int main(void)
 {
 	int comb1, comb2, comb3;
 
-	for (comb1 = 48; comb1 = 58; comb1++)
+	for (comb1 = 48; comb1 < 58; comb1++)
 	{
-		for (comb2 = 49; comb2 = 58; comb2++)
+		for (comb2 = 49; comb2 < 58; comb2++)
 		{
 			for (comb3 = 50; comb3 < 58; comb3++)
 			{
