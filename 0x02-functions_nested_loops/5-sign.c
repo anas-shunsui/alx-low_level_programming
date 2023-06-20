@@ -3,7 +3,7 @@
 /**
  * print_sign - 1 prints + if n is greater than zero, 0 prints 0 if n is zero, -1 prints - if n is less than zero
  *
- * @c: input for function
+ * @n: input for function
  *
  * Return: 1 if +, 0 if 0, -1 if -
  */
