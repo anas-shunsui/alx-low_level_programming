@@ -6,15 +6,15 @@
  * @n: input
  */
 
-void print_to_98(int n),
+void print_to_98(int n)
 {
-	int b;
+	int count;
 
 	if (n > 98)
-		for (b = n; b > 98; b--)
-			printf("%d, ", b);
+		for (count = n; count > 98; count--)
+			printf("%d, ", count);
 	else
-		for (b = n; b < 98; b++)
-			printf("%d, ", b);
+		for (count = n; count < 98; count++)
+			printf("%d, ", count);
 	printf("98\n");
 }
