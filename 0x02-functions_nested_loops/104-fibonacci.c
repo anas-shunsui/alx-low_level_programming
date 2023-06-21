@@ -37,7 +37,7 @@ int main(void)
 
 		if (fibo1 > 0)
 			printf("%lu", fibo1);
-		init = numLength(max) - 1 - numLength(fib1);
+		init = length(max) - 1 - length(fib1);
 
 		while (fibo1 > 0 && init > 0)
 		{
