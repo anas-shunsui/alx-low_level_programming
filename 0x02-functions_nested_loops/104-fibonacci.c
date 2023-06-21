@@ -45,7 +45,7 @@ int main(void)
 			init--;
 		}
 
-		printf("lu", fib1);
+		printf("%lu", fib1);
 
 		sum = (fib1 + fib2) % max;
 		sum1 = fibo1 + fibo2 + (fib1 + fib2) / max;
