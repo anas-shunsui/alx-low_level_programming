@@ -10,9 +10,9 @@ void print_times_table(int n)
 {
 	int a, b, c;
 
-	if (n <= 15 && n>= 0)
+	if (n <= 15 && n >= 0)
 	{
-		for (c = 0; c <= n; c++)
+		for (c = 0; c <= n; ++c)
 		{
 			_putchar(48);
 			for (b = 1; b <= n; ++b)
