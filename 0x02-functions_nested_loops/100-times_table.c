@@ -29,11 +29,11 @@ void print_times_table(int n)
 				if (a >= 100)
 				{
 					_putchar((a / 100) + 48);
-					_putchar((a / 10) % 10 +10);
+					_putchar((a / 10) % 10 + 48);
 				}
 				else if (a <= 99 && a >= 10)
 					_putchar((a / 10) + 48);
-				_putchar((a % 10) + 10);
+				_putchar((a % 10) + 48);
 			}
 			_putchar('\n');
 		}
