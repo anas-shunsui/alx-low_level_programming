@@ -30,29 +30,29 @@ int length(int num)
 int main(void)
 {
 	int count, init;
-	unsigned long fi1 = 1, fi2 = 2, sum, mx = 1000000000, fib1 = 0, fib2 = 0, sum1 = 0;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 1000000000, fb1 = 0, fb2 = 0, su = 0;
 
 	for (count = 1; count <= 98; count++)
 	{
 
-		if (fib1 > 0)
-			printf("%lu", fib1);
-		init = length(mx) - 1 - length(fi1);
+		if (fb1 > 0)
+			printf("%lu", fb1);
+		init = length(mx) - 1 - length(f1);
 
-		while (fib1 > 0 && init > 0)
+		while (fb1 > 0 && init > 0)
 		{
 			printf("%d", 0);
 			init--;
 		}
 
-		printf("%lu", fi1);
+		printf("%lu", f1);
 
-		sum = (fi1 + fi2) % mx;
-		sum1 = fib1 + fib2 + (fi1 + fi2) / mx;
-		fi1 = fi2;
-		fib1 = fib2;
-		fi2 = sum;
-		fib2 = sum1;
+		sum = (f1 + f2) % mx;
+		su = fb1 + fb2 + (f1 + f2) / mx;
+		f1 = f2;
+		fb1 = fb2;
+		f2 = sum;
+		fb2 = su;
 
 		if (count != 98)
 			printf(", ");
