@@ -13,6 +13,8 @@ int length(int num)
 	int len = 0;
 
 	if (!num)
+		return (1);
+	while (num)
 	{
 		num = num / 10;
 		len += 1;
