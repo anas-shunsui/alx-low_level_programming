@@ -30,7 +30,7 @@ int length(int num)
 int main(void)
 {
 	int count, init;
-	unsigned long f1 = 1, f2 = 2, sum, mx = 1000000000, fb1 = 0, fb2 = 0, su = 0;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, fb1 = 0, fb2 = 0, su = 0;
 
 	for (count = 1; count <= 98; count++)
 	{
