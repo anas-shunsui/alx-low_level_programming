@@ -32,11 +32,11 @@ int _atoi(char *s)
 			digit = s[i] - '0';
 			if (a % 2)
 				digit = -digit;
-			n = n * 10 + digit;
+			b = b * 10 + digit;
 			c = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-			f = 0;
+			c = 0;
 		}
 		i++;
 	}
