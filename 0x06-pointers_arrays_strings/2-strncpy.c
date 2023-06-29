@@ -4,9 +4,9 @@
 /**
  * _strncpy - function that copies a string
  *
- * @dest: 
- * @src:
- * @n:
+ * @dest: destination 
+ * @src: source
+ * @n: string
  *
  * Return: @dest
  */
