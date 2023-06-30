@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * reverse_array - Function that reverses the content of an
@@ -13,12 +12,12 @@
 
 void reverse_array(int *a, int n)
 {
-	int z, b, c;
+	int i, j;
 
-	for (z = 0, b = (n - 1); z < b; z++; b--)
+	for (i = 0; i < n--; i++)
 	{
-		c = a[z];
-		a[z] = a[b];
-		a[b] = c;
+		j = a[i];
+		a[i] = a[n];
+		a[n] = j;
 	}
 }
