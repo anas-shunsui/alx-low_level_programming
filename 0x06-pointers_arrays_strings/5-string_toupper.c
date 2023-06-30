@@ -2,10 +2,9 @@
 
 /**
  * string_toupper - changes lowercase to uppercase
- *
  * @a: pointer
  *
- * Return: str
+ * Return: a
  */
 
 char *string_toupper(char *a)
