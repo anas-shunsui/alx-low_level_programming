@@ -17,7 +17,7 @@ char *cap_string(char *str)
 		while (!(str[ind] >= 'a' && str[ind] <= 'z'))
 			ind++;
 
-		if (str[ind - 1] == '' || str[ind -1] == '\t' || str[ind -1] == '\n' || str[ind - 1] == ',' || str[ind - 1] == ';' || str[ind - 1] == '.' || str[ind - 1] == '!' || str[ind -1] == '?' || str[ind - 1] == '"' || str[ind - 1] == '(' || str[ind - 1] == ')' || str[ind - 1] == '{' || str[ind - 1] == '}' || ind == 0)
+		if (str[ind - 1] == '' || str[ind - 1] == '\t' || str[ind - 1] == '\n' || str[ind - 1] == ',' || str[ind - 1] == ';' || str[ind - 1] == '.' || str[ind - 1] == '!' || str[ind - 1] == '?' || str[ind - 1] == '"' || str[ind - 1] == '(' || str[ind - 1] == ')' || str[ind - 1] == '{' || str[ind - 1] == '}' || ind == 0)
 			str[ind] = str[ind] - 32;
 		ind++;
 	}
