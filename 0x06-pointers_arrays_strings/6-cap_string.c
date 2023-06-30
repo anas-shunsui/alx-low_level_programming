@@ -8,7 +8,7 @@
  * Return: changed string
  */
 
-char *cap_string(char *str)
+char *cap_string(char *a)
 {
 	int ind = 0;
 
