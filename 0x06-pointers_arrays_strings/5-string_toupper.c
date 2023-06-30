@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * string_toupper - changes all lowercase to uppercase
+ * string_toupper - changes lowercase to uppercase
  *
  * @str: pointer
+ *
  * Return: str
  */
 
@@ -12,6 +13,7 @@ char *string_toupper(char *str)
 	int i;
 	
 	i = 0;
+
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
