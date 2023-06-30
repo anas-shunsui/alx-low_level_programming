@@ -3,7 +3,7 @@
 /**
  * *cap_string - capitalizes all words of a string
  *
- * @str: string
+ * @a: string
  *
  * Return: changed string
  */
@@ -12,15 +12,15 @@ char *cap_string(char *a)
 {
 	int ind = 0;
 
-	while (str[ind])
+	while (a[ind])
 	{
-		while (!(str[ind] >= 'a' && str[ind] <= 'z'))
+		while (!(a[ind] >= 'a' && a[ind] <= 'z'))
 			ind++;
 
-		if (str[ind - 1] == ' ' || str[ind - 1] == '\t' || str[ind - 1] == '\n' || str[ind - 1] == ',' || str[ind - 1] == ';' || str[ind - 1] == '.' || str[ind - 1] == '!' || str[ind - 1] == '?' || str[ind - 1] == '"' || str[ind - 1] == '(' || str[ind - 1] == ')' || str[ind - 1] == '{' || str[ind - 1] == '}' || ind == 0)
-			str[ind] -= 32;
+		if (a[ind - 1] == ' ' || a[ind - 1] == '\t' || a[ind - 1] == '\n' || a[ind - 1] == ',' || a[ind - 1] == ';' || a[ind - 1] == '.' || a[ind - 1] == '!' || a[ind - 1] == '?' || a[ind - 1] == '"' || a[ind - 1] == '(' || a[ind - 1] == ')' || a[ind - 1] == '{' || a[ind - 1] == '}' || ind == 0)
+			a[ind] -= 32;
 		ind++;
 	}
 
-	return (str);
+	return (a);
 }
