@@ -1,7 +1,7 @@
 #include "main.c"
 
 /**
- * print_diagsums - prints sum of 2 diagonals of a sqr matrix of int
+ * print_diagsums - prints sum of 2 diagonals
  * @a: input
  * @size: input
  *
