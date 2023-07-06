@@ -7,6 +7,7 @@
  * Return: 1 if n is prime num, 0 if not
  */
 
+int prime(int n, int a);
 int is_prime_number(int n)
 {
 	if (n <= 1)
