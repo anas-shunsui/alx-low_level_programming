@@ -3,7 +3,7 @@
 /**
  * is_prime_number - find if n is a prime number or not
  * @n: num
- *
+ * @a: iterator
  * Return: 1 if n is prime num, 0 if not
  */
 
