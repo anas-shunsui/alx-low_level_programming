@@ -10,7 +10,7 @@
  * Return: 0 success, 1 fail
  */
 
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int sum;
 
