@@ -7,7 +7,6 @@
  * for an amount of money
  *@argc: num of arguments
  *@argv: array
-
  *Return: 0 if success, 1 if fail
  */
 
