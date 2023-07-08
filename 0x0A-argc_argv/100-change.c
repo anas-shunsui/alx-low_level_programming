@@ -4,10 +4,10 @@
 
 /**
  * main - prints minimum num of coins to make change
- * for an amount of money
- *@argc: num of arguments
- *@argv: array
- *Return: 0 if success, 1 if fail
+ * @argc: num of arguments
+ * @argv: array
+ *
+ * Return: 0 success, 0 fail
  */
 
 int main(int argc, char *argv[])
