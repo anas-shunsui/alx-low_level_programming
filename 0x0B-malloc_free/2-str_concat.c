@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * _stringlen - length of string
  * @str: string
@@ -23,7 +24,7 @@ int _stringlen(char *str)
  * Return: pointer
  */
 
-int *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	int a, sizeA, sizeB;
 	char *b;
