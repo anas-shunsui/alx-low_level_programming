@@ -4,7 +4,6 @@
 /**
  * _stringlen - length of string
  * @str: string
- * 
  * Return: int
  */
 
@@ -13,6 +12,7 @@ int _stringlen(char *str)
 	int size = 0;
 	while (str[size] != '\0')
 		size++;
+
 	return (size);
 }
 
@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 
 	sizeA = _stringlen(s1);
 	sizeB = _stringlen(s2);
-	b = malloc((sizeA + sizeB) *sizeof(char) + 1);
+	b = malloc((sizeA + sizeB) * sizeof(char) + 1);
 	if (b == 0)
 		return (0);
 
