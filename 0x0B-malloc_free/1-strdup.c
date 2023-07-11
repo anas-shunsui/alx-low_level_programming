@@ -24,10 +24,10 @@ char *_strdup(char *str)
 
 	if (b == 0)
 		return (NULL);
-	while (a < size)
+	else
 	{
-		a++;
-		b[a] = str[a];
+		for (; a < size; a++)
+			b[a] = str[a];
 	}
 
 	return (b);
