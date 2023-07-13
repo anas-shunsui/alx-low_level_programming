@@ -2,25 +2,6 @@
 #include <stdlib.h>
 
 /**
- * *_func - memory with constant byte
- * @str: pointer
- * @c: constant
- * @b: byte
- *
- * Return: pointer
- */
-
-char *_func(char *str, char c, unsigned int b)
-{
-	char *ptr = str;
-
-	while (b--)
-		*str++ = c;
-
-	return (ptr);
-}
-
-/**
  * *_calloc - allocates memory for an array using malloc
  * @nmemb: array
  * @size: size
@@ -30,15 +11,17 @@ char *_func(char *str, char c, unsigned int b)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *a;
+	char *a;
 
-	if (size == 0 || nmemb == 0)
+	if (!nmemb || !size)
 		return (NULL);
 
-	a = malloc(sizeof(int) * nmemb);
-	if (a == 0)
+	a = malloc(nmemb * size);
+	if (!a)
 		return (NULL);
 
-	_func(a, 0, sizeof(int) * nmemb);
+	nmemb = nmemb * size;
+	while (nmemb)
+		a[nmemb] = 0;
 	return (a);
 }
