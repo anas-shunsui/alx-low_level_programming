@@ -40,6 +40,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	_func(a, 0, sizeof(int) * nmemb);
-
 	return (a);
 }
