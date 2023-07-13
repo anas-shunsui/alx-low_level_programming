@@ -39,7 +39,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (a == 0)
 		return (NULL);
 
-	_func(a, 0, sizeof(int) * nmemb);
+	*_func(a, 0, sizeof(int) * nmemb);
 
 	return (a);
 }
