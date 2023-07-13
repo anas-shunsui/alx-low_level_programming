@@ -7,7 +7,7 @@
  * @c: constant
  * @b: byte
  *
- * Retrun: str
+ * Retrun: pointer
  */
 
 char *_func(char *str, char c, unsigned int b)
