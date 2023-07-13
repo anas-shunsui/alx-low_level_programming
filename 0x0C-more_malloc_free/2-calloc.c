@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * *_func - memory with constant byte
+ * *_memset - memory with constant byte
  * @str: pointer
  * @c: constant
  * @b: byte
@@ -10,7 +10,7 @@
  * Return: pointer
  */
 
-char *_func(char *str, char c, unsigned int b)
+char *_memset(char *str, char c, unsigned int b)
 {
 	char *ptr = str;
 
@@ -39,7 +39,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (a == 0)
 		return (NULL);
 
-	*_func(a, 0, sizeof(int) * nmemb);
+	_memset(a, 0, sizeof(int) * nmemb);
 
 	return (a);
 }
