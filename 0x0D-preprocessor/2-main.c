@@ -1,5 +1,4 @@
-#include <stdlib.h>
-
+#include <stdio.h>
 /**
  * main - prints name of file it was compiled from
  *
