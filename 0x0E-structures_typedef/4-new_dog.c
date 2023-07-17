@@ -2,13 +2,13 @@
 #include "dog.h"
 
 /**
- * strlen - gets length of string
+ * _strlen - gets length of string
  * @str: string
  *
  * Return: str
  */
 
-int strlen(const char *str)
+int _strlen(const char *str)
 {
 	int len = 0;
 
@@ -18,14 +18,14 @@ int strlen(const char *str)
 }
 
 /**
- * strcopy - returns dest with a copy from src
+ * *_strcopy - returns dest with a copy from src
  * @src: source
  * @dest: destination
  *
  * Return: destination
  */
 
-char strcopy(char *dest, char *src)
+char *_strcopy(char *dest, char *src)
 {
 	int a;
 
