@@ -3,7 +3,7 @@
 /**
  * main - prints name of file it was compiled from
  *
- * Return : always zero
+ * Return : Always 0.
  */
 int main(void)
 {
