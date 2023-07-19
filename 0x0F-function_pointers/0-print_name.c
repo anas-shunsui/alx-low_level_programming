@@ -12,5 +12,5 @@
 void print_name(chat *name, void '(*f)(char *))
 {
 	if (name && f)
-		(*f)(name);
+		f(name);
 }
