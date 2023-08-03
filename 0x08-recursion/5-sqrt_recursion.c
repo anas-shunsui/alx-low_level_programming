@@ -26,7 +26,7 @@ int sqr(int n, int b)
 	if (b * b == n)
 		return (b);
 	if (b * b < n)
-		return (sqr(a, b + 1));
+		return (sqr(n, b + 1));
 	else
 		return (-1);
 }
