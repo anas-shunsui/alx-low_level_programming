@@ -3,12 +3,11 @@
 /**
  * _sqrt_recursion - Returns the natural square root of a number
  * @n: number
- * @a: int
  * @b: int
  *
  * Return: if n doesn't have natural square root return -1
  */
-int sqr(int a, int b);
+int sqr(int n, int b);
 int _sqrt_recursion(int n)
 {
 	return (sqr(n, 1));
@@ -16,17 +15,17 @@ int _sqrt_recursion(int n)
 
 /**
  * sqr - square root
- * @a: int
+ * @n: int
  * @b: int
  *
  * Return: integer
  */
 
-int sqr(int a, int b)
+int sqr(int n, int b)
 {
-	if (b * b == a)
+	if (b * b == n)
 		return (b);
-	if (b * b < a)
+	if (b * b < n)
 		return (sqr(a, b + 1));
 	else
 		return (-1);
