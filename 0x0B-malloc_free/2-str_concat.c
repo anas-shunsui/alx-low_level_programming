@@ -11,6 +11,7 @@ int _length(char *str)
 	int size0 = 0;
 	for (; str[size0] != '\0'; size0++)
 		;
+
 	return (size0);
 }
 
@@ -28,9 +29,9 @@ char *str_concat(char *s1, char *s2)
 	char *i;
 
 	if (s1 == NULL)
-		s1 = "";
+		s1 = "\0";
 	if (s2 == NULL)
-		s2 = "";
+		s2 = "\0";
 
 	sizeA = _length(s1);
 	sizeB = _length(s2);
@@ -38,10 +39,8 @@ char *str_concat(char *s1, char *s2)
 	if (i == 0)
 		return (0);
 
-	a = 0;
-	while (a <= sizeA + sizeB)
+	for (a = 0; a <= sizeA + sizeB; a++)
 	{
-		a++;
 		if (a < sizeA)
 			i[a] = s1[a];
 		else
