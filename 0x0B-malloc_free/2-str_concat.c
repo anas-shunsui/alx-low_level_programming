@@ -9,6 +9,7 @@
 int _length(char *str)
 {
 	int size0 = 0;
+
 	for (; str[size0] != '\0'; size0++)
 		;
 
