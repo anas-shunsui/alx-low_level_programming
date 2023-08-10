@@ -21,9 +21,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 
 	for (s1_len = 0; s1[s1_len] != '\0', s1_len++)
-		printf("%d\n", s1_len);
+		;
 	for (s2_len = 0; s2[s2_len] != '\0', s2_len++)
-		printf("%d\n", s2_len);
+		;
 
 	result = malloc(s1_len + n + 1);
 	if (result == NULL)
