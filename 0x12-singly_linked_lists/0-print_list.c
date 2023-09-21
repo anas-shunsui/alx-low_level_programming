@@ -5,7 +5,7 @@
  * @st: string
  *
  * Return: length of str
- */
+
 
 int _strlen(char *st)
 {
@@ -17,7 +17,7 @@ int _strlen(char *st)
 		a++;
 	return (a);
 }
-
+**/
 /**
  * print_list - prints all elements of a list
  * @h: node
@@ -29,9 +29,9 @@ size_t print_list(const list_t *h)
 {
 	size_t s = 0;
 
-	while (h)
+	while (h != NULL)
 	{
-		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
+		printf("[%d] %s\n", h->len, (h->str != NULL ? h->str : "(nil)"));
 		h = h->next;
 		s++;
 	}
