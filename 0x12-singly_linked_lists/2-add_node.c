@@ -1,4 +1,7 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * add_node - adds node to the start of list
@@ -24,8 +27,10 @@ list_t *add_node(list_t **head, const char *str)
 		free(new_h);
 		return (NULL);
 	}
+
 	new_h->next = *head;
 	*head = new_h;
+	new_h->len = strlen(new_h->str);
 
 	return (new_h);
 }
