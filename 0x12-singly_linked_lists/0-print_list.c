@@ -2,18 +2,18 @@
 
 /**
  * _strlen - length of string
- * @str: string
+ * @st: string
  *
  * Return: length of str
  */
 
-int _strlen(char *str)
+int _strlen(char *st)
 {
 	int a = 0;
 
 	if (!a)
 		return (0);
-	while (*str++)
+	while (*st++)
 		a++;
 	return (a);
 }
