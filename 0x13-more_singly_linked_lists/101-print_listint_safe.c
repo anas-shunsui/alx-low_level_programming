@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * print_listint_safe - prints a linked list safely
@@ -8,6 +6,7 @@
  *
  * Return: num of nodes in the list
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t i = 0;
@@ -16,7 +15,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	while (current != NULL)
 	{
-		printf("[%p] %d\n", (void *)current, current->n);
+		printf("[%lu] %d\n", i, current->n);
 		i++;
 
 		temp = current;
@@ -24,7 +23,7 @@ size_t print_listint_safe(const listint_t *head)
 
 		if (temp <= current)
 		{
-			printf("-> [%p] %d\n", (void *)current, current->n);
+			printf("-> [%lu] %d\n", i, current->n);
 			break;
 		}
 	}
