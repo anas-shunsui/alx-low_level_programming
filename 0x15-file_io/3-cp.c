@@ -33,7 +33,7 @@ int main(int ac, char **av)
 		if (write(to_file, buf, a) != 0)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	if (a == -1)
-		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit (98);
+		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 
 	from_file = close(from_file);
 	to_file = close(to_file);
