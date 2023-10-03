@@ -7,7 +7,7 @@
 #define PERMISSION (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 
 /**
- * main - Entry point
+ * main - the program
  * @ac: arg count
  * @av: arg vector
  *
@@ -30,7 +30,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 
 	while ((a = read(from_file, buf, READ_BUF_SIZE)) > 0)
-		if (write(to_file, buf, a) != 0)
+		if (write(to_file, buf, a) != a)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	if (a == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
