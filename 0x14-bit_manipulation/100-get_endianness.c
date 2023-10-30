@@ -13,10 +13,10 @@ int get_endianness(void)
 	
 	if (*b == 1)
 	{
-		return (1); // Little-endian
+		return (1);
 	}
 	else
 	{
-		return (0); // Big-endian
+		return (0);
 	}
 }
